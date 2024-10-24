@@ -1,0 +1,11 @@
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+int main(void)
+{
+	int num1, num2;
+	int result;
+	printf("두 개 정수 입력");
+	scanf("%d %d", &num1, &num2);
+	result = num1 & num2;
+	printf("%d & %d=%d", num1, num2, result);
+}
