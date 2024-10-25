@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+int sum(int n) {
+    // 종료 조건: n이 1일 때 함수 종료
+    if (n == 1) {
+        return 1;
+    }
+    // 재귀 호출을 통해 1부터 n까지의 합 계산
+    return n + sum(n - 1);
+}
+
+int main() {
+    int n;
+    printf("1부터 n까지의 합을 구합니다. n의 값을 입력하세요: ");
+    scanf("%d", &n);
+
+    printf("1부터 %d까지의 합: %d\n", n, sum(n));
+
+    return 0;
+}
