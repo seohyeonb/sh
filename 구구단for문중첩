@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    // 짝수 단 구구단 출력
+    for (int dan = 2; dan <= 8; dan += 2) { // 짝수 단만 반복
+        for (int i = 1; i <= dan; i++) { // 각 단의 범위를 dan까지 설정
+            printf("%d x %d = %d\n", dan, i, dan * i);
+        }
+        printf("\n"); // 각 단 사이에 빈 줄 추가
+    }
+    return 0;
+}
