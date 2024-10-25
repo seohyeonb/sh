@@ -1,0 +1,4 @@
+void showStatus(int reviewCount, float avgRating)
+{
+
+}
