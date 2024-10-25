@@ -1,0 +1,16 @@
+#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+int main(void)
+{
+	int line,st;
+	for (line = 1; line <= 10; line++)
+	{
+		printf("***********");
+		printf("\n");
+	}
+	for (line = 11; line <= 20; line++)
+	{
+		printf("     *     ");
+		printf("\n");
+	}
+}
