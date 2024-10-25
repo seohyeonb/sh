@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    int i, j;
+
+    for (i = 1; i <= 5; i++) //행 개수 정하기
+    {
+        for (j = 1; j <= 5 - i; j++) //빈칸은 점점 없어져야되니까.. 4321 순으로 줄어듦
+        {
+            printf(" ");
+        }
+        for (j = 1; j <= (2 * i - 1); j++) //1357 순서로 늘어나야돼서.. (2*i-1)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
